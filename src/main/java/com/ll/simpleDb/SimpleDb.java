@@ -22,8 +22,10 @@ public class SimpleDb {
     }
 
     public void run(String sql) {
-        try (Connection connection = getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql)) {
+        try (
+             Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)
+        ) {
             statement.execute(); // SQL 실행
         } catch (SQLException e) {
             e.printStackTrace(); // 에러 로그 출력
