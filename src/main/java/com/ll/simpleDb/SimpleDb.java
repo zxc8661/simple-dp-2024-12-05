@@ -46,4 +46,10 @@ public class SimpleDb {
             throw new RuntimeException("DB 실행 중 오류 발생: " + e.getMessage());
         }
     }
+
+    public Sql genSql() {
+        return new Sql();
+    }
+
+
 }
