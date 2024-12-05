@@ -1,14 +1,13 @@
 package com.ll.simpleDb;
 
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor   //final에 생성자가 생김
 public class SimpleDb {
-    private String host;
-    private String username;
-    private String password;
-    private String dbname;
-    public SimpleDb(String host, String username, String password,String dbname){
-        this.host = host;
-        this.username = username;
-        this.password = password;
-        this.dbname = dbname;
-    }
+    private final String host;
+    private final String username;
+    private final String password;
+    private final String dbname;
+
 }
