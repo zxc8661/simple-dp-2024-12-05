@@ -1,9 +1,7 @@
 package com.ll.simpleDb;
 
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 public class SimpleDbTest {
@@ -31,6 +29,12 @@ public class SimpleDbTest {
                     isBlind BIT(1) NOT NULL DEFAULT 0
                 )
                 """);
+    }
+
+    @Test
+    @DisplayName("데이터베이스 연결 테스트")
+    public void t000(){
+
     }
 }
 
