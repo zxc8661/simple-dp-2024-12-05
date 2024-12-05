@@ -47,7 +47,7 @@ public class SimpleDbTest {
 
             simpleDb.run("""
                     insert into article
-                    set createDate = now(),
+                    set createdDate = now(),
                     modifiedDate = now(),
                     title = ?,
                     `body` = ?,
@@ -64,5 +64,7 @@ public class SimpleDbTest {
     public void t000(){
 
     }
+
+
 }
 
